@@ -8,6 +8,13 @@ const app = new App({
   socketMode: true
 });
 
+app.command("/theoriginalslackbot-ping", async ({ command, ack, respond }) => {
+  const start = Date.now();
+  await ack();
+  const latency = Date.now() - start;
+  await respond({ text: `Pong!\nLatency: ${latency}ms` });
+});
+
 function getWeatherEmoji(code) {
   if (code === 0) return "☀️";
   if (code <= 3) return "🌤";
