@@ -1,4 +1,4 @@
-Travel Assistant Slack Bot ✈️
+Travel Assistant Slack Bot 
 A simple, effective Slack bot designed to help travelers and aviation enthusiasts with real-time data.
 
 Features
